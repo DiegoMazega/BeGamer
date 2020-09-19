@@ -22,7 +22,7 @@ public class Game implements Serializable {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	private String title;
 	private Platform platform;
 	
@@ -35,7 +35,7 @@ public class Game implements Serializable {
 	
 	public Game() {}
 
-	public Game(Integer id, String title, Platform platform, Genre genre) {
+	public Game(Long id, String title, Platform platform, Genre genre) {
 		super();
 		this.id = id;
 		this.title = title;
@@ -43,11 +43,11 @@ public class Game implements Serializable {
 		this.genre = genre;
 	}
 
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
