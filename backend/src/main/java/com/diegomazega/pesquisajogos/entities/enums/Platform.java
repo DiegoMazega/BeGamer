@@ -4,5 +4,5 @@ public enum Platform {
 	
 	PC,
 	PLAYSTATION,
-	XOBOX;
+	XBOX;
 }
