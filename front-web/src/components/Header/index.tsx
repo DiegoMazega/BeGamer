@@ -10,6 +10,6 @@ const Header = () =>(
            <span className="logo-text-2"> Survey</span>
        </div>
    </header>
-)
+);
 
 export default Header;
