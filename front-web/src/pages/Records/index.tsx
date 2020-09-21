@@ -6,7 +6,7 @@ import Pagination from './Pagination';
 import { Link } from 'react-router-dom';
 import './styles.css';
 
-const BASE_URL = "http://localhost:8080"
+const BASE_URL = "https://sds1-diegomazega.herokuapp.com"
 
 const Records = () => {
 
