@@ -1,17 +1,22 @@
 import React from 'react';
 import { Text, View, Image, Alert } from 'react-native';
-import styles from './styles';
 import { RectButton } from 'react-native-gesture-handler';
 import { FontAwesome5 as Icon } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
+import Header from '../../components/Header';
+import styles from './styles';
 
 const Home = () => {
 
+    const navi = useNavigation();
+
     const handleOnPress = () =>{
-        Alert.alert('foi');
+        navi.navigate('CreateRecord');
     }
 
     return (
         <>
+            <Header />
             <View style={styles.container}>
                 <Image source={require('../../assets/game.png')}
                     style={styles.gamerImage}
