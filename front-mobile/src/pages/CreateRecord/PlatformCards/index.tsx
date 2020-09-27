@@ -16,14 +16,15 @@ const PlatformCard = ({platform, onChange, icon, activePlatform}:Props) => {
 
     const isActive = platform === activePlatform;
     const backgroundColor = isActive? "#FAD7C8": '#FFF';
+    const textColor = isActive? "#ED7947" : '#9E9E9E';
 
     return(
     <RectButton
         style={[styles.platformCard, {backgroundColor}]}
         onPress={() => onChange(platform)}
     >
-        <Icon name={icon} size={60} color="#9E9E9E" />
-        <Text style={[styles.platformCardText, {color: '#9E9E9E'}]}>
+        <Icon name={icon} size={60} color={textColor} />
+        <Text style={[styles.platformCardText, {color: textColor}]}>
             {platform === "PLAYSTATION" ? 'PS' : platform }
         </Text>
     </RectButton>
